@@ -274,7 +274,7 @@ async def todo_list_lists(params: ListListsInput) -> str:
         lists = [_list_to_dict(x) for x in items]
         payload = {"count": len(lists), "has_more": has_more, "lists": lists}
         md = "# Task lists\n\n" + (
-            "\n".join(f"- {l['displayName']}  \n  `{l['id']}`" for l in lists) or "_No lists._"
+            "\n".join(f"- {lst['displayName']}  \n  `{lst['id']}`" for lst in lists) or "_No lists._"
         )
         return _render(payload, md, params.response_format)
     except Exception as exc:  # noqa: BLE001
