@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "ms-todo": {
+      "command": "python",
+      "args": ["-m", "ms_todo_mcp"],
+      "env": {
+        "MS_TODO_CLIENT_ID": "REPLACE_WITH_APPLICATION_CLIENT_ID",
+        "MS_TODO_TENANT_ID": "REPLACE_WITH_DIRECTORY_TENANT_ID",
+        "MS_TODO_TIMEZONE": "Europe/Madrid"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+# Secrets / local config
+.env
+.env.*
+!.env.example
+
+# Token cache (NEVER commit — contains access/refresh tokens)
+*token_cache*.json
+.ms_todo_mcp/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Tooling
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
