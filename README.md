@@ -154,4 +154,40 @@ ms-todo-mcp/
 ├── README.md
 ├── CONTRIBUTING.md
 ├── LICENSE                 # MIT
-├── .en
+├── .env.example
+├── .gitignore
+├── examples/
+│   ├── README.md
+│   └── claude_desktop_config.json
+└── src/
+    └── ms_todo_mcp/
+        ├── __init__.py
+        ├── __main__.py
+        ├── auth.py
+        ├── graph.py
+        └── server.py
+```
+
+## Releases
+
+Releases are automated with
+[release-please](https://github.com/googleapis/release-please-action). You do
+**not** create tags or GitHub releases by hand.
+
+The version is derived from [Conventional Commits](https://www.conventionalcommits.org/).
+Because `main` is squash-merged, **the PR title is what counts** — prefix it
+accordingly:
+
+- `fix: ...` → patch bump (`0.1.0` → `0.1.1`)
+- `feat: ...` → minor bump (`0.1.0` → `0.2.0`)
+- `feat!: ...` or a `BREAKING CHANGE:` footer → major bump (`0.1.0` → `1.0.0`)
+- `docs: ...`, `chore: ...`, `ci: ...`, `refactor: ...` → no release
+
+Flow:
+
+1. Merge PRs into `main` using Conventional Commit titles.
+2. release-please opens (and keeps updating) a **release PR** titled
+   `chore: release X.Y.Z`, bumping the version in `pyproject.toml` and
+   `src/ms_todo_mcp/__init__.py` and updating `CHANGELOG.md`.
+3. When you merge that release PR, release-please creates the `vX.Y.Z` git tag
+   and the GitHub Release with auto-generated notes.
