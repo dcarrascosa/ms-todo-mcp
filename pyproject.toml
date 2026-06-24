@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ms-todo-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server for Microsoft To Do (Microsoft Graph)"
 readme = "README.md"
 license = { text = "MIT" }
