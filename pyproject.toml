@@ -32,4 +32,4 @@ packages = ["src/ms_todo_mcp"]
 
 [tool.ruff]
 line-length = 100
-target-versio
+target-version = "py310"
