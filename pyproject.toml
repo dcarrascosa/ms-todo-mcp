@@ -24,8 +24,8 @@ dev = ["ruff>=0.5.0"]
 ms-todo-mcp = "ms_todo_mcp.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/your-org/ms-todo-mcp"
-Issues = "https://github.com/your-org/ms-todo-mcp/issues"
+Homepage = "https://github.com/dcarrascosa/ms-todo-mcp"
+Issues = "https://github.com/dcarrascosa/ms-todo-mcp/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ms_todo_mcp"]
